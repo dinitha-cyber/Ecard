@@ -14,7 +14,7 @@ window.addEventListener('scroll', function () {
 // Add Me button: save contact
 function saveContact() {
     // vCard format for download
-    const vCardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Dinitha Serasinghe\nORG:Prasuking (pvt) LTD\nTITLE:Cyber Security Intern\nEMAIL:dinitha@email.com\nEND:VCARD`;
+    const vCardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Dinitha Serasinghe\nORG:Prasuking (pvt) LTD\nTITLE:Cyber Security Intern\nTEL;TYPE=CELL:+94713627051\nEMAIL:dinithavalo1@gmail.com\nEND:VCARD`;
     const blob = new Blob([vCardData], { type: 'text/vcard' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
